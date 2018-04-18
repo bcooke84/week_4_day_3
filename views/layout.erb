@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
+  <title>Hogwarts Student Database</title>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="/home">Home</a></li>
+      <li><a href="/home/students">Student List</a></li>
+      <li><a href="/home/students/new">New Student</a></li>
+    </ul>
+  </nav>
+  <main>
+      <section>
+        <article>
+            <%= yield %><!-- Article (content) goes here -->
+        </article>
+      </section>
+    </main>
+    <aside>
+      <!-- Secondary navigation or additional modules go here -->
+    </aside>
+    <footer>
+      <!-- Footer goes here -->
+    </footer>
+</body>
+</html>

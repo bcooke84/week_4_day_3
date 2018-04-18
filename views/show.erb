@@ -1,0 +1,13 @@
+<p>Name: <%= @student.pretty_name() %></br>
+Age: <%= @student.age %></br>
+House: <%= @student.house_id %></p>
+
+<form action="/home/students/<%= @student.id %>/delete" method="post">
+  <input type="submit" value="Delete Record">
+</form>
+
+<!-- IS THIS SAYING, WHEN YOU CLICK THIS BUTTON, YOU GO YOU GO TO THE ACTION PAGE? -->
+<!-- WHAT IS THE PURPOSE OF GET HERE?  -->
+<form action="/home/students/<%= @student.id %>/edit" method="get">
+  <input type="submit" value="Edit Student">
+</form>
